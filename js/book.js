@@ -14,10 +14,12 @@ searchBtn.addEventListener('click', function () {
         bookContainer.innerHTML = '';
         return;
     }
+
     //Clear the Search field
     bookContainer.innerHTML = '';
     resultCount.innerHTML = '';
     searchInput.value = '';
+    errorDiv.innerHTML = '';
 
     //Fetch the API
     const url = `http://openlibrary.org/search.json?q=${searchText}`;
